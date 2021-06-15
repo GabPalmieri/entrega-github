@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,600&display=swap" rel="stylesheet">
+    <title>MENOS ES MAS - BURGER</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="header__iconos">
+            <ul>
+                <li> <a href="https://www.instagram.com/menosesmasburgers/?hl=en"><img src="../img/instagram.png" alt="instagram"></a> </li>
+                <li> <a href="#"><img src="../img/whatsapp.png" alt="whatsapp"></a></li>    
+            </ul>
+        </div>
+        <div class="header__logo"><a href="../index.html"> <img src="../img/logo.png" alt="LogoMenosesMas"></a></div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">HAMBURGUESAS</a></li>
+                <li><a href="sandwiches.html">SANDWICHES</a></li>
+                <li><a href="menu.html">MENÚ</a></li>
+                <li><a href="nuestrosProductos.html">NUESTROS PRODUCTOS</a></li>
+                <li><a href="pedidos.html">PEDIDO</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <h2 class="h2__pedido">HACENOS TU PEDIDO</h2>
+   
+    <main class="main__pedido">
+
+        
+        <h3 class="h3__pedido">Todas las hamburguesas y sandwiches salen acompañados de Papas Fritas</h3>
+        <form action="" method="">
+
+            <fieldset>
+                <fieldset class="fieldset__fieldset">
+                    <!--DATOS DEL CLIENTE-->
+                    <legend>TUS DATOS</legend>
+
+                    <label for="nombreyapellido">NOMBRE</label>
+                    <input type="text" placeholder=""><br>
+
+                    <label for="direccion">DIRECCIÓN</label>
+                    <input type="text" placeholder=""> 
+                    <label for="direccion">Piso/Timbre</label>
+                    <input type="text" placeholder=""><br>
+                    
+
+                    <!--RADIO  BUTTON-->
+                    casa<input type="radio" name="casadepto">
+                    departamento<input type="radio" name="casadepto">
+
+                </fieldset>
+                <br>
+                
+                <fieldset>
+                    <!--DATOS DEL PEDIDO BURGER-->
+                    <legend>PEDÍ TU BURGER</legend>
+                    <select name="hamburguesas" id="">
+                        <option value="0">Burger</option>
+                        <option value="a">ATR</option>
+                        <option value="r">Ronro</option>
+                        <option value="p">Parrillera</option>
+                        <option value="d">Don Corleone</option>
+                        <option value="v">Veggie</option>
+                    </select>
+
+                    <select name="tamano" id="">
+                        <option value="0">Doble</option>
+                        <option value="3">Triple</option>
+                        <option value="4">Cuadruple</option>
+                        <option value="1">Simple</option>
+                    </select>
+                    <input type="number" name="cantidad" id="" placeholder="cantidad">
+                    <!--CHECKBOX ADICIONALES-->
+                    Queso<input type="checkbox"> Panceta Ahumada<input type="checkbox"> Medallón<input type="checkbox"> Porción de Papas<input type="checkbox">                    
+                    <br>
+
+                    <!--BURGER 2-->
+                    <select name="hamburguesas" id="">
+                        <option value="0">Burger</option>
+                        <option value="a">ATR</option>
+                        <option value="r">Ronro</option>
+                        <option value="p">Parrillera</option>
+                        <option value="d">Don Corleone</option>
+                        <option value="v">Veggie</option>
+                    </select>
+
+                    <select name="tamano" id="">
+                        <option value="0">Doble</option>
+                        <option value="3">Triple</option>
+                        <option value="4">Cuadruple</option>
+                        <option value="1">Simple</option>
+                    </select>
+                    <input type="number" name="cantidad" id="" placeholder="cantidad">
+
+                    <!--CHECKBOX ADICIONALES-->
+                    Queso<input type="checkbox"> Panceta Ahumada<input type="checkbox"> Medallón<input type="checkbox"> Porción de Papas<input type="checkbox">
+
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <!--DATOS DEL PEDIDO SANDWICH-->
+                    <legend>PEDÍ TU SANDWICH</legend>
+                    <select name="sandwich" id="">
+                        <option value="0">Sandwich</option>
+                        <option value="m">Meet Ball</option>
+                        <option value="b">B.L.T.</option>
+                        <option value="t">Triple Queso</option>
+                        <option value="c">Cubano</option>
+                    </select>
+                    <input type="number" name="cantidad" id="" placeholder="cantidad">
+                    <!--CHECKBOX ADICIONALES-->
+                    Porción de Papas<input type="checkbox">
+
+                    <br>
+
+                    <!--SANDWICH 2-->
+                    <select name="sandwich" id="">
+                        <option value="0">Sandwich</option>
+                        <option value="m">Meet Ball</option>
+                        <option value="b">B.L.T.</option>
+                        <option value="t">Triple Queso</option>
+                        <option value="c">Cubano</option>
+                    </select>
+                    <input type="number" name="cantidad" id="" placeholder="cantidad">
+                    <!--CHECKBOX ADICIONALES-->
+                    Porción de Papas<input type="checkbox">
+
+                </fieldset>
+                
+                <br>
+                
+                <br>
+                
+                <fieldset>
+                    ¿QUERES HACERNOS ALGUNA ACLARACIÓN?<br>
+                    <textarea name="" id="" cols="100" rows="10">
+        
+                    </textarea>
+                </fieldset>
+                <br>
+                <input type="submit" value="ENVIAR">      
+                <input type="reset" value="BORRAR">
+        
+
+
+
+            </fieldset>
+        </form>
+        
+    </main>
+
+    <footer>
+        <div class="footer__datos">
+
+            <div class="barrios-delivery">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="150" height="150" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=felix%20oregone%20742&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://fmovies-online.net">fmovies</a><br>
+                        <a href="https://www.embedgooglemap.net">how do i add a google map to my website</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer__datos--div">
+                <ul>
+                    <li><img src="../img/phone.png" alt="telefono">1145362796</li>
+                    <li><img src="../img/horario.png" alt="horario">Jue a Dom - 19 a 23hs.</li>
+                    <li><img src="../img/delivery.png" alt="Zona delivery">Delivery and Take Away - Zona Gratuita:
+                        Mataderos, Liniers, V. Luro.</li>
+                    <li>Otras zonas: consultar costos.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer__links">
+            <div class="footer__links--iconos">
+                <ul>
+                    <li> <a href="https://www.instagram.com/menosesmasburgers/?hl=en"><img src="../img/instagram.png" alt="instagram"></a> </li>
+                    <li> <a href="#"><img src="../img/whatsapp.png" alt="whatsapp"></a></li>    
+                </ul>
+                
+            </div>
+            <nav class="footer__menu">
+                <ul>
+                    <li><a href="../index.html">Hamburguesas</a></li>
+                    <li><a href="sandwiches.html">Sandwiches</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="nuestrosProductos.html">Nuestros Productos</a></li>
+                    <li><a href="pedidos.html">Pedido</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </footer>
+
+
+</body>
+</html>
