@@ -18,6 +18,11 @@ main{
     border-bottom: #ffaa24 20px solid;
 }
 
+a{
+    text-decoration: none;
+
+}
+
 /*comienza header*/
 
 header{
@@ -96,6 +101,9 @@ nav ul li:hover{
     background-color: #2c2c2c;
 }
 
+.nav-width{
+    width: 100%;
+}
 
 
 /*finaliza header*/
@@ -110,7 +118,7 @@ nav ul li:hover{
     text-align: center;
     margin: 100px auto 50px auto;
     padding: 6px 0 1px 0;
-    background-image: linear-gradient(to top, #ffaa24, black);
+    background-color: #ffaa24;
     color: black;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
@@ -159,15 +167,27 @@ nav ul li:hover{
 
 }
 
-.imagenBurger{
-    width: 90%;
-    transition: all 1s;
-
+img{
+    max-width: 100%;
+    height: auto;
 }
 
+
+
+
+.imagenBurger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+
+
+/**
 .imagenBurger:hover{
     transform: scale(1.15,1.15);
 }
+**/
 
 .descripcionBurger{
     display: flex;
@@ -176,7 +196,12 @@ nav ul li:hover{
     margin-left: 15px;
     margin-right: 15px;
     height: 400px;
+}
 
+.descripcionBurger__nombre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .descripcionBurger__detalle{
@@ -189,6 +214,7 @@ nav ul li:hover{
     font-size: 14px;
     line-height: 30px;
     font-weight: 200;
+    text-align: center;
 }
 
 
@@ -215,7 +241,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 80%;   
+  
 }
 
 .barrios-delivery{
@@ -226,7 +252,7 @@ footer{
 
 .footer__datos--div{
     display: inline-block;
-    width: 90%;
+
 
 
 }
@@ -264,7 +290,6 @@ footer{
 
 .footer__links--iconos{
     display:inline-block;
-
 
 }
 .footer__links--iconos ul {
@@ -656,6 +681,22 @@ p{
 }
 
 
+@media only screen and (max-width: 768px)  {
+    .descripcionBurger{
+        height: 300px;
+    }
 
+    .panceta-flotante{
+        width: 20%;
+        position: fixed;
+        top: 50px;
+        left: 15px;
+    }
+    
+    .h1__HamburguesasSandwich {
+        font-size: 1rem;
+    }
+
+}
 
 
