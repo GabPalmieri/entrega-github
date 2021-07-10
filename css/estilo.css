@@ -736,5 +736,8 @@ p{
         border-bottom: black 3px solid !important;
     }
 
+    .boton{
+        width: 35%;
+    }
  
 }
