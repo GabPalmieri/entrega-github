@@ -12,10 +12,9 @@ body {
 }
 
 main{
-    width: 90%;
-    margin: 35px auto 55px auto;
+    width: 100%;
+    margin: 35px auto 35px auto;
     padding-bottom: 80px;
-    border-bottom: #ffaa24 20px solid;
 }
 
 a{
@@ -50,7 +49,7 @@ header{
     position: flex;
     justify-content: center;
     align-content: center;
-    margin: 50px auto 20px auto;
+    margin: 50px auto 50px auto;
 
 
 }
@@ -105,6 +104,10 @@ nav ul li:hover{
     width: 100%;
 }
 
+.activeBorder{
+    border-bottom: #ffaa24 3px solid !important;
+}
+
 
 /*finaliza header*/
 
@@ -113,15 +116,15 @@ nav ul li:hover{
 
 .h1__HamburguesasSandwich{
 
-    width: 90%;
-    height: 35px;
+    width: 100%;
+    height: 50px;
     text-align: center;
-    margin: 100px auto 50px auto;
-    padding: 6px 0 1px 0;
-    background-color: #ffaa24;
-    color: black;
+    margin: 8% 0 5% 0;
+    padding: 6px 0 6px 0;
+    border-bottom: #ffaa24 5px solid;
+    color: white;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 35px;
     font-weight: 800;
     letter-spacing: 3px;
 
@@ -130,8 +133,9 @@ nav ul li:hover{
 
 .panceta-flotante{
     position: fixed;
-    top: 335px;
+    top: 400px;
     left: 50px;
+ 
 }
 
 .pimentero-flotante{
@@ -224,6 +228,15 @@ img{
 
 /*finaliza HamburguesasSandwich*/
 
+/*BARRA*/
+
+.barra{
+    width: 100%;
+    height: 7px;
+    background-color: #ffaa24;
+}
+
+/*finaliza BARRA*/
 
 
 /*comienza footer*/
@@ -234,7 +247,7 @@ footer{
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 50px auto 35px auto;
+    margin: 60px auto 35px auto;
 }
 
 .footer__datos{
@@ -365,13 +378,6 @@ footer{
 
 /* comienza Nuestros Productos*/
 
-.header__nuestrosProductos{
-
-    background-image: url(../img/header_nuestrosProductos.jpg);
-    background-repeat:no-repeat;
-    background-size: cover;     
-}
-
 
 .h2__nuestrosProductos{
     width: 90%;
@@ -389,7 +395,7 @@ footer{
 }
 
 .h3__nuestrosProductos{
-    margin: 0 auto 35px 0;
+    margin: 25px auto 35px 0;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -397,49 +403,8 @@ footer{
 
 }
 
-.main__nuestrosProductos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;    
-    border-bottom: #4FB9AF 20px solid;
-
-}
-
-.video__nuestrosProductos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 80%;
-
-}
-
-.video__video__nuestrosProductos{
-    display: inline-block;  
-    margin: 15px auto 15px auto;
-    height: 350px;
-    background-image: url(../img/video.jpg);
-    background-repeat: no-repeat;
-
-}
-
-
-.section__nuestrosProductos {
-    width: 80%;
-    margin-top: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.nuestrosProductos__individual{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 35px;
+.containerNuestrosProductos{
+    margin-top: 30px;
 }
 
 .nuestrosProductos__individual__texto{
@@ -451,13 +416,15 @@ footer{
 }
 
 .nuestrosProductos__individual__imagen{
-    width: 30%;
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+
 }
 
-.nuestrosProductos__individual__texto{
-    width: 50%;
+.rowNuestrosProductos{
+    margin: 35px auto 15px auto;
 }
-
 
 
 
@@ -496,19 +463,30 @@ footer{
 }
 
 fieldset{
-    display: block;
-    width: 75%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
     margin: 15px auto 15px auto;
-    padding: 15px 15px 15px 15px;
+    padding: 15px 0 15px 0;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     font-size: 15px;
     color: #CCCCCC;
 }
 
+.form{
+    width: 75%;
+}
+
+.containerFieldset{
+    margin: 10px auto 5px 0;
+}
+
 legend{
     color: orange;
-    padding: 15px 15px 15px 15px;
+    padding: 5px 5px 2px 5px;
+    margin-bottom: 10px;
+    border-bottom: #ffaa24 3px solid;
 }
 
 label{
@@ -529,6 +507,11 @@ textarea{
 
 }
 
+.boton{
+    width: 15%;
+    margin: 5px 0 5px 15px;
+}
+
 /*finaliza pedido*/
 
 /*comienza menu*/
@@ -543,7 +526,6 @@ textarea{
 
 .menuGrid__Burger{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     width: 80%;
 
@@ -648,18 +630,17 @@ textarea{
 }
 
 .h2__menu{
-    width: 90%;
-    height: 35px;
+    width: 100%;
+    height: 50px;
     text-align: center;
-    margin: 100px auto 50px auto;
-    padding: 5px 0 2px 0;
-    background-image: linear-gradient(to top, #ffaa24, black);
-    color: black;
+    margin: 8% 0 5% 0;
+    padding: 6px 0 6px 0;
+    border-bottom: #ffaa24 5px solid;
+    color: white;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 35px;
     font-weight: 800;
-    letter-spacing: 3px;
- 
+    letter-spacing: 3px; 
 }
 
 
@@ -694,9 +675,63 @@ p{
     }
     
     .h1__HamburguesasSandwich {
-        font-size: 1rem;
+        font-size: 1.25rem;
+        height: 35px;
+    }
+
+    .pimentero-flotante{
+        width: 15%;
+        position: fixed;
+        top: 50px;
+        right: 15px;
+    }
+
+    .h2__menu{
+        font-size: 2rem;
+    }
+
+    .grid-container {
+
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .h3__nuestrosProductos{
+        text-align: center;
+        margin: 0 auto 15px auto;
+    }
+
+    .nuestrosProductos__individual__imagen{
+        display: flex;
+        justify-content: center;
+        margin: 35px auto 15px auto;
+    }
+
+    .nuestrosProductos__individual__texto{
+        display: flex;
+        justify-content: center;
+        margin:15px auto 15px auto;
+        width: 95%;
+        text-align: center;
     }
 
 }
 
+@media only screen and (max-width: 991px){
 
+    main{
+        padding-bottom: 30px;
+    }
+
+    .panceta-flotante{
+        width: 15%;
+        position: fixed;
+        top: 45px;
+        left: 15px;
+    }
+
+    .activeBorder{
+        border-bottom: black 3px solid !important;
+    }
+
+ 
+}
