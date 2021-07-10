@@ -699,6 +699,9 @@ p{
         text-align: center;
         margin: 0 auto 15px auto;
     }
+    .boton{
+        width: 25%;
+    }
 
     .nuestrosProductos__individual__imagen{
         display: flex;
